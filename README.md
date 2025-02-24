@@ -1,24 +1,30 @@
-# README
+# FUDO CHALLENGE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Requisitos Previos:
+* Ruby 3.1.4
+* PostgreSQL 14
+* Redis 7
+* Docker y Docker Compose (opcional)
+---
+Pasos para instalar localmente el proyecto:
+- 1: Clonar via HTTPS o SSH al destino deseado
+- 2: Instalar PostgreSQL en el caso que no se tenga
+- 3: Una vez dentro del proyecto, instalar dependencias: `bundle install`
+- 4 (opcional): Configurar variables de entorno (RAILS_ENV, REDIS_URL, DBUSER, DBPASS, DBHOST)
+- 5: Configurar una JWT Secret Key:
+  * Ejecutar en la terminal `EDITOR="code --wait" bin/rails credentials:edit`
+  * Agregar en el editor: `jwt_secret_key: <clave_generada>`
+- 6: Crear y migrar la base de datos:
+  * `rails db:create`
+  * `rails db:migrate`
+  * opcional `rails db:seed` para precargar users
+- 7:Iniciar redis y sidekiq:
+  * `redis-server`
+  * `bundle exec sidekiq`
+- 8: Asegurarse que pase todos los tests: `bundle exec rspec`
+- 9: Iniciar el servidor: `rails s`
+---
+Ademas se puede ejecutar en docker:
+ - 1: `docker compose build`
+ - 2: `docker-compose run api bundle exec rails db:create db:migrate db:seed`
+ - 3: `docker compose up`
