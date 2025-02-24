@@ -28,3 +28,6 @@ Ademas se puede ejecutar en docker:
  - 1: `docker compose build`
  - 2: `docker-compose run api bundle exec rails db:create db:migrate db:seed`
  - 3: `docker compose up`
+---
+Link a postman para probar los endpoints:
+[postman requests](https://www.postman.com/speeding-shuttle-182691/workspace/public/collection/21763381-77a1a1c4-8273-4ddd-be38-6ac68013b331?action=share&creator=21763381&active-environment=21763381-5b4d140c-eb6d-4fed-be0e-497d170a039c)
