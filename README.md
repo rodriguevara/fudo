@@ -17,12 +17,12 @@ Pasos para instalar localmente el proyecto:
 - 6: Crear y migrar la base de datos:
   * `rails db:create`
   * `rails db:migrate`
-  * opcional `rails db:seed` para precargar users
 - 7:Iniciar redis y sidekiq:
   * `redis-server`
   * `bundle exec sidekiq`
-- 8: Asegurarse que pase todos los tests: `bundle exec rspec`
-- 9: Iniciar el servidor: `rails s`
+- 8 (opcional): `rails db:seed` para precargar users
+- 9: Asegurarse que pase todos los tests: `bundle exec rspec`
+- 10: Iniciar el servidor: `rails s`
 ---
 Ademas se puede ejecutar en docker:
  - 1: `docker compose build`
