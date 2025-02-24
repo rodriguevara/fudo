@@ -1,0 +1,1 @@
+El HTTP (Protocolo de Transferencia de Hipertexto) es un protocolo que permite la comunicación entre clientes (aplicaciones, navegadores, APIs) y servidores web. Opera mediante solicitudes del cliente (como GET o POST) y respuestas del servidor, permitiendo la transferencia de datos como páginas web, imágenes o archivos.

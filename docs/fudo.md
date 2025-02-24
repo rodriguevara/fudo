@@ -1,0 +1,5 @@
+Fudo es una aplicación web que permite a negocios del rubro gastronómico administrar y gestionar sus operaciones de manera eficiente.
+
+Es una solución integral diseñada para optimizar la gestión de restaurantes y comercios gastronómicos. Ofrece funcionalidades avanzadas para manejar ventas, como la creación de menús digitales accesibles mediante códigos QR, la administración de pedidos "Take Away" y la integración con plataformas de pago como Mercado Pago. Además, permite gestionar ventas en mostrador y delivery, facilitando la organización de pedidos y la comunicación con los clientes a través de confirmaciones por WhatsApp.
+
+El sistema también incluye herramientas para el control financiero, como el arqueo de caja, la gestión de múltiples cajas y la creación de descuentos. Permite la administración de inventarios con control de stock, notificaciones por falta de stock y la actualización automática de costos y stock al registrar gastos. Además, ofrece funcionalidades para la gestión de clientes y proveedores, incluyendo la administración de cuentas corrientes y la importación masiva de datos.
